@@ -1,4 +1,4 @@
-package com.tescomm.customview;
+package com.tescomm.customview.photohelper;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -10,6 +10,8 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+
+import com.tescomm.customview.R;
 
 /**
  * Created by zwl on 2017/5/9 0009.

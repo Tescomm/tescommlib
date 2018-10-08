@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#f03f33</color>
+    <color name="color_orange_red">#f03f33</color>
+    <color name="lineColor">#11333333</color>
+    <color name="black_font">#bb000000</color>
+    <color name="black_bg">#66333333</color>
+    <color name="txt_11">#111111</color>
+    <color name="cl_63">#638FFE</color>
+    <color name="cl_33">#333333</color>
+    <color name="cl_dd">#dddddd</color>
+    <color name="cl_22">#222222</color>
+    <color name="cl_44">#444444</color>
+    <color name="cl_66">#666666</color>
+    <color name="cl_c2">#C2D1F8</color>
+    <color name="cl_97">#979797</color>
+    <color name="cl_99">#999999</color>
+    <color name="cl_ef">#efefef</color>
+    <color name="cl_f7">#F7F7F7</color>
+    <color name="cl_f6">#f6f6f6</color>
+    <color name="cl_d8">#d8d8d8</color>
+    <color name="cl_f5">#f5f5f9</color>
+    <color name="cl_e7">#e74646</color>
+    <color name="cl_eb">#EB4857</color>
+    <color name="cl_75">#759CFF</color>
+    <color name="cl_ff">#ffcd7a</color>
+    <color name="txt_65">#656D81</color>
+    <!--tab页选中字体颜色  物资领用颜色-->
+    <color name="main_tabtext_selected">#638FFE</color>
+    <!--tab页未选中字体颜色-->
+    <color name="main_tabtext_unselected">#666666</color>
+    <!--主题header颜色-->
+    <color name="header_main">#ffffff</color>
+    <!--主题分隔线颜色-->
+    <color name="divider">#dddddd</color>
+    <!--背景颜色-->
+    <color name="color_back">#eeeeee</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="color_FFF5F5F9">#FFF5F5F9</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="bg_indicator_point_normal">#D8D8D8</color>
+    <color name="bg_indicator_point_selected">#A6A6A6</color>
+    <color name="bg_horizontal_btn_normal">#eeeeee</color>
+    <color name="bg_horizontal_btn_selected">#70a3a4a7</color>
+</resources>

@@ -17,6 +17,14 @@
             android:onClick="photohelperClick"
             tools:layout_editor_absoluteX="28dp"
             tools:layout_editor_absoluteY="16dp"/>
+        <Button
+            android:id="@+id/bt_addresspicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="addresspicker Demo"
+            android:onClick="addresspickerClick"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="16dp"/>
 
     </LinearLayout>
 

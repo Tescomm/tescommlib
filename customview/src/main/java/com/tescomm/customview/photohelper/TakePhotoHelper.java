@@ -1,4 +1,4 @@
-package com.tescomm.customview;
+package com.tescomm.customview.photohelper;
 
 import android.Manifest;
 import android.app.Activity;
@@ -14,11 +14,7 @@ import android.provider.MediaStore;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.FileProvider;
-import android.text.TextUtils;
 import android.util.Log;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.File;
 import java.io.FileOutputStream;

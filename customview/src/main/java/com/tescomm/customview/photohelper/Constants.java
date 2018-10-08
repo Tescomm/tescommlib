@@ -1,4 +1,4 @@
-package com.tescomm.customview;
+package com.tescomm.customview.photohelper;
 
 import android.os.Environment;
 

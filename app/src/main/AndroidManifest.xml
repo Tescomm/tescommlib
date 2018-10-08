@@ -18,6 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".PhoteHelperActivity"/>
+        <activity android:name=".CityPickerActivity"/>
+
     </application>
 
 </manifest>

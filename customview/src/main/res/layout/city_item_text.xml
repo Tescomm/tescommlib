@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/selectitem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/itemTvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:paddingBottom="13dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="13dp"
+        android:textColor="#262626"
+        android:text="wewer"
+        android:textSize="@dimen/dp_11">
+    </TextView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/itemTvTitle"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/selectshape"
+        android:id="@+id/selectimg"
+        android:layout_margin="@dimen/sp_8"
+        android:visibility="gone"/>
+</RelativeLayout>

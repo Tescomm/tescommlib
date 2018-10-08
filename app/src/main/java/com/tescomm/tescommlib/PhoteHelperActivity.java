@@ -12,8 +12,8 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.tescomm.customview.Constants;
-import com.tescomm.customview.TakePhotoHelper;
+import com.tescomm.customview.photohelper.Constants;
+import com.tescomm.customview.photohelper.TakePhotoHelper;
 
 public class PhoteHelperActivity extends AppCompatActivity implements View.OnClickListener {
 

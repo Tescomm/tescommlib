@@ -23,4 +23,13 @@
         <item name="android:backgroundDimEnabled">true</item>
         - <!--  模糊-->
     </style>
+    <!--设置tabLayout字体大小-->
+    <style name="MyTabLayoutTextAppearance">
+        <item name="android:textSize">@dimen/dp_11</item>
+    </style>
+
+    <!--设置tabLayout字体大小-->
+    <style name="MyCustomTabTextAppearance">
+        <item name="android:textSize">17sp</item>
+    </style>
 </resources>
