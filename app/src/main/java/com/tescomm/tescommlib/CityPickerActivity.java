@@ -4,20 +4,14 @@ import android.content.Context;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.TextUtils;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.blankj.utilcode.util.ToastUtils;
 import com.tescomm.customview.addresspicker.CityPickerView;
 import com.tescomm.customview.entities.CityBean;
 
@@ -32,7 +26,6 @@ public class CityPickerActivity  extends AppCompatActivity implements View.OnCli
     View pop_top;
     TextView tvMyIntentAddress;
     RelativeLayout rlMyIntentWorkAddress;
-    private String strPosition;
     private String strAddress;
     private com.tescomm.customview.addresspicker.CityPickerView addressView;
 
@@ -80,9 +73,7 @@ public class CityPickerActivity  extends AppCompatActivity implements View.OnCli
         View rootView = LayoutInflater.from(this).inflate(R.layout.city_picker_pop, null, false);
 //        hideKeyboard();
         addressView = rootView.findViewById(R.id.apvAddress);
-
         addressView.initTitle("请选择", "", "");
-
         addressView.setOnAddressPickerSure(new CityPickerView.OnAddressPickerListener() {
             @Override
             public void onCancalClick() {
@@ -96,11 +87,6 @@ public class CityPickerActivity  extends AppCompatActivity implements View.OnCli
                 tvMyIntentAddress.setVisibility(View.VISIBLE);
                 strAddress = address;
                 popupWindow.dismiss();
-
-//                roomID = districtCode;districtCode
-//                tv_resident_address.setText( address);
-//                popupWindow.dismiss();
-
             }
 
             /**
@@ -110,8 +96,6 @@ public class CityPickerActivity  extends AppCompatActivity implements View.OnCli
             @Override
             public void onOneClick() {
 //                maddressPrsent.getAddressResult("", 1);
-//                mPresenter.getRoomResult("","",1);
-                getAddressResultSuccess(null,1);
             }
             /**
              * 获取第二级列表的数据
@@ -130,7 +114,6 @@ public class CityPickerActivity  extends AppCompatActivity implements View.OnCli
             @Override
             public void onThreeClick(String oneid, String twoid) {
 //                maddressPrsent.getAddressResult(twoid, 3);
-//                mPresenter.getRoomResult(oneid,twoid,3);
                 getAddressResultSuccess(null,3);
             }
         });
@@ -162,11 +145,11 @@ public class CityPickerActivity  extends AppCompatActivity implements View.OnCli
             if(listHttpResponse==null){
                 CityBean.AddressItemBean item = new CityBean.AddressItemBean();
                 item.setI("1");
-                item.setN("北京");
+                item.setN("北京市");
                 beans.add(item);
                 CityBean.AddressItemBean item2 = new CityBean.AddressItemBean();
                 item2.setI("2");
-                item2.setN("上海");
+                item2.setN("上海市");
                 beans.add(item2);
             }
             addressView.flushProviceList(beans);
