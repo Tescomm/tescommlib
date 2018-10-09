@@ -78,7 +78,7 @@ public class CityPickerActivity  extends AppCompatActivity implements View.OnCli
     private void showAddressPickerPop() {
         final PopupWindow popupWindow = new PopupWindow(this);
         View rootView = LayoutInflater.from(this).inflate(R.layout.city_picker_pop, null, false);
-        hideKeyboard();
+//        hideKeyboard();
         addressView = rootView.findViewById(R.id.apvAddress);
 
         addressView.initTitle("请选择", "", "");
@@ -103,20 +103,30 @@ public class CityPickerActivity  extends AppCompatActivity implements View.OnCli
 
             }
 
+            /**
+             * 获取第一级列表的数据
+             * 此方法应该从服务器获取数据，完成后调用getAddressResultSuccess，传入获取的数据
+             */
             @Override
             public void onOneClick() {
 //                maddressPrsent.getAddressResult("", 1);
 //                mPresenter.getRoomResult("","",1);
                 getAddressResultSuccess(null,1);
             }
-
+            /**
+             * 获取第二级列表的数据
+             * 此方法应该从服务器获取数据，完成后调用getAddressResultSuccess，传入获取的数据
+             */
             @Override
             public void onTwoClick(String oneid) {
 //                maddressPrsent.getAddressResult(oneid, 2);
 //                mPresenter.getRoomResult(oneid,"",2);
                 getAddressResultSuccess(null,2);
             }
-
+            /**
+             * 获取第三级列表的数据
+             * 此方法应该从服务器获取数据，完成后调用getAddressResultSuccess，传入获取的数据
+             */
             @Override
             public void onThreeClick(String oneid, String twoid) {
 //                maddressPrsent.getAddressResult(twoid, 3);
@@ -126,6 +136,11 @@ public class CityPickerActivity  extends AppCompatActivity implements View.OnCli
         });
 
 //        maddressPrsent.getAddressResult("", 1);
+        /**
+         * 初始化数据。
+         * 应该从服务器获取数据，完成后调用getAddressResultSuccess，传入获取的数据
+         */
+        getAddressResultSuccess(null,1);
         popupWindow.setContentView(rootView);
         popupWindow.setWidth(ViewGroup.LayoutParams.MATCH_PARENT);
         popupWindow.setHeight(ViewGroup.LayoutParams.MATCH_PARENT);
@@ -147,11 +162,11 @@ public class CityPickerActivity  extends AppCompatActivity implements View.OnCli
             if(listHttpResponse==null){
                 CityBean.AddressItemBean item = new CityBean.AddressItemBean();
                 item.setI("1");
-                item.setN("1楼");
+                item.setN("北京");
                 beans.add(item);
                 CityBean.AddressItemBean item2 = new CityBean.AddressItemBean();
                 item2.setI("2");
-                item2.setN("2楼");
+                item2.setN("上海");
                 beans.add(item2);
             }
             addressView.flushProviceList(beans);
@@ -165,11 +180,11 @@ public class CityPickerActivity  extends AppCompatActivity implements View.OnCli
             if(listHttpResponse==null){
                 CityBean.AddressItemBean item = new CityBean.AddressItemBean();
                 item.setI("1");
-                item.setN("1门");
+                item.setN("海淀区");
                 beans.add(item);
                 CityBean.AddressItemBean item2 = new CityBean.AddressItemBean();
                 item2.setI("2");
-                item2.setN("2门");
+                item2.setN("朝阳区");
                 beans.add(item2);
             }
             addressView.flushCityList(beans);
@@ -183,11 +198,11 @@ public class CityPickerActivity  extends AppCompatActivity implements View.OnCli
             if(listHttpResponse==null){
                 CityBean.AddressItemBean item = new CityBean.AddressItemBean();
                 item.setI("1");
-                item.setN("101");
+                item.setN("中关村");
                 beans.add(item);
                 CityBean.AddressItemBean item2 = new CityBean.AddressItemBean();
                 item2.setI("2");
-                item2.setN("201");
+                item2.setN("望京");
                 beans.add(item2);
             }
             addressView.flushDistrictList(beans);
